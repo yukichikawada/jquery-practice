@@ -7,10 +7,17 @@ class View {
   }
 
   bindEvents() {
-    
+    this.el.on("click", "li", (event => {
+      const $square = $(event.currentTarget);
+      this.makeMove($square);
+    }));
   }
 
   makeMove($square) {
+    const pos = $square.data("pos");
+    const currentPlayer = this.game.currentPlayer;
+
+    
 
   }
 
