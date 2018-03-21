@@ -15,7 +15,17 @@ class View {
   }
 
   setupBoard() {
-    this.el.append("booooo");
+    const $ul = $("<ul>");
+    $ul.addClass("base");
+
+    for (let tower = 0; tower < 3; tower++) {
+      const $li = $("<li>");
+      $li.data("place", tower);
+
+      $ul.append($li);
+    }
+
+    this.el.append($ul);
   }
 }
 

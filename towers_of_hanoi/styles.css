@@ -1,0 +1,20 @@
+html, body, figure, figcaption, ul, li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  text-align: inherit;
+}
+
+ul {
+  margin: 30px auto;
+  list-style: none;
+  width: 300px;
+  border: 5px solid black;
+}
+
+li {
+  float: left;
+  width: 90px;
+  cursor: pointer;
+}
